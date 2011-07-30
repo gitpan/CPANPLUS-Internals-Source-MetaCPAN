@@ -1,6 +1,6 @@
 package CPANPLUS::Internals::Source::MetaCPAN::HTTP;
 BEGIN {
-  $CPANPLUS::Internals::Source::MetaCPAN::HTTP::VERSION = '0.02';
+  $CPANPLUS::Internals::Source::MetaCPAN::HTTP::VERSION = '0.04';
 }
 
 #ABSTRACT: Lightweight HTTP implementation
@@ -765,7 +765,7 @@ CPANPLUS::Internals::Source::MetaCPAN::HTTP - Lightweight HTTP implementation
 
 =head1 VERSION
 
-version 0.02
+version 0.04
 
 =head1 SYNOPSIS
 

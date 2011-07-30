@@ -1,6 +1,6 @@
 package CPANPLUS::Internals::Source::MetaCPAN::Tie;
 BEGIN {
-  $CPANPLUS::Internals::Source::MetaCPAN::Tie::VERSION = '0.02';
+  $CPANPLUS::Internals::Source::MetaCPAN::Tie::VERSION = '0.04';
 }
 
 #ABSTRACT: A tie for the MetaCPAN source engine
@@ -78,6 +78,7 @@ sub FETCH {
     ### expand author if needed
     ### XXX no longer generic :(
     if( $table eq 'module' ) {
+        return if $href->{maturity} and $href->{maturity} eq 'developer';
         $href->{author} = delete $href->{author};
         $href->{module} = $key;
         $href->{version} = delete $href->{version};
@@ -195,7 +196,7 @@ CPANPLUS::Internals::Source::MetaCPAN::Tie - A tie for the MetaCPAN source engin
 
 =head1 VERSION
 
-version 0.02
+version 0.04
 
 =head1 DESCRIPTION
 

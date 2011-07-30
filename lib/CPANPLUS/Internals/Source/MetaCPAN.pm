@@ -1,6 +1,6 @@
 package CPANPLUS::Internals::Source::MetaCPAN;
 BEGIN {
-  $CPANPLUS::Internals::Source::MetaCPAN::VERSION = '0.02';
+  $CPANPLUS::Internals::Source::MetaCPAN::VERSION = '0.04';
 }
 
 #ABSTRACT: MetaCPAN source implementation
@@ -174,7 +174,7 @@ CPANPLUS::Internals::Source::MetaCPAN - MetaCPAN source implementation
 
 =head1 VERSION
 
-version 0.02
+version 0.04
 
 =head1 SYNOPSIS
 

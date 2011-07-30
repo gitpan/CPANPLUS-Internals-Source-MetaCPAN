@@ -2,7 +2,7 @@ NAME
     CPANPLUS::Internals::Source::MetaCPAN - MetaCPAN source implementation
 
 VERSION
-    version 0.02
+    version 0.04
 
 SYNOPSIS
       # In the CPANPLUS shell
