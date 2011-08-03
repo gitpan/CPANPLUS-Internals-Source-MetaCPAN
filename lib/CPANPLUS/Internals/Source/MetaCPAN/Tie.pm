@@ -1,6 +1,6 @@
 package CPANPLUS::Internals::Source::MetaCPAN::Tie;
 BEGIN {
-  $CPANPLUS::Internals::Source::MetaCPAN::Tie::VERSION = '0.04';
+  $CPANPLUS::Internals::Source::MetaCPAN::Tie::VERSION = '0.06';
 }
 
 #ABSTRACT: A tie for the MetaCPAN source engine
@@ -196,7 +196,7 @@ CPANPLUS::Internals::Source::MetaCPAN::Tie - A tie for the MetaCPAN source engin
 
 =head1 VERSION
 
-version 0.04
+version 0.06
 
 =head1 DESCRIPTION
 

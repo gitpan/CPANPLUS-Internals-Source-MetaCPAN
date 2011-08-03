@@ -1,6 +1,6 @@
 package CPANPLUS::Internals::Source::MetaCPAN::HTTP;
 BEGIN {
-  $CPANPLUS::Internals::Source::MetaCPAN::HTTP::VERSION = '0.04';
+  $CPANPLUS::Internals::Source::MetaCPAN::HTTP::VERSION = '0.06';
 }
 
 #ABSTRACT: Lightweight HTTP implementation
@@ -107,7 +107,7 @@ sub reset
   }
   $self->{HTTPReadBuffer} = "";
   $self->{method} = "GET";
-  $self->{headers} = { 'user-agent' => "HTTP::Lite/$CPANPLUS::Internals::Source::MetaCPAN::HTTP::VERSION" };
+  $self->{headers} = { 'user-agent' => "CPANPLUS-Internals-Source-MetaCPAN/$CPANPLUS::Internals::Source::MetaCPAN::HTTP::VERSION" };
   $self->{headermap} = { 'user-agent'  => 'User-Agent' };
 }
 
@@ -765,7 +765,7 @@ CPANPLUS::Internals::Source::MetaCPAN::HTTP - Lightweight HTTP implementation
 
 =head1 VERSION
 
-version 0.04
+version 0.06
 
 =head1 SYNOPSIS
 

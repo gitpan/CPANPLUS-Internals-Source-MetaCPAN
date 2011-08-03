@@ -1,4 +1,15 @@
 ==============================
+2011-08-03 12:27:47 +0100 0.06
+==============================
+
+  commit ac534e281fd9c490328997e08d885e2e4ddb1be6
+  Author: Chris 'BinGOs' Williams <chris@bingosnet.co.uk>
+  Date:   Wed Aug 3 12:27:47 2011 +0100
+  
+    Change the User-Agent string to something the metacpan people can use
+    for stats 
+
+==============================
 2011-07-30 21:41:08 +0100 0.04
 ==============================
 
