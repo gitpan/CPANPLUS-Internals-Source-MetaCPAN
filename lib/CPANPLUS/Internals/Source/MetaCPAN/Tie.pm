@@ -1,6 +1,6 @@
 package CPANPLUS::Internals::Source::MetaCPAN::Tie;
-BEGIN {
-  $CPANPLUS::Internals::Source::MetaCPAN::Tie::VERSION = '0.06';
+{
+  $CPANPLUS::Internals::Source::MetaCPAN::Tie::VERSION = '0.08';
 }
 
 #ABSTRACT: A tie for the MetaCPAN source engine
@@ -79,6 +79,7 @@ sub FETCH {
     ### XXX no longer generic :(
     if( $table eq 'module' ) {
         return if $href->{maturity} and $href->{maturity} eq 'developer';
+        return unless $href->{indexed};
         $href->{author} = delete $href->{author};
         $href->{module} = $key;
         $href->{version} = delete $href->{version};
@@ -186,8 +187,8 @@ sub CLEAR    {  }
 
 qq[Tie your mother down];
 
-
 __END__
+
 =pod
 
 =head1 NAME
@@ -196,7 +197,7 @@ CPANPLUS::Internals::Source::MetaCPAN::Tie - A tie for the MetaCPAN source engin
 
 =head1 VERSION
 
-version 0.06
+version 0.08
 
 =head1 DESCRIPTION
 
@@ -216,10 +217,9 @@ Chris Williams <chris@bingosnet.co.uk>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2011 by Chris Williams and Jos Boumans.
+This software is copyright (c) 2012 by Chris Williams and Jos Boumans.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
